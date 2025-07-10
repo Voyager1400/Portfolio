@@ -124,6 +124,7 @@ header {
     font-weight: 600;
     transition: all 0.3s;
     border: 2px solid var(--primary);
+    margin-left: 340px;
 }
 
 .cta-button:hover {
@@ -133,14 +134,15 @@ header {
     box-shadow: 0 10px 20px rgba(52, 152, 219, 0.2);
 }
 
-.hero-image {
+/* .hero-image {
     flex: 1;
     display: flex;
     justify-content: center;
     animation: fadeInRight 1s ease-out;
-}
+    margin-top: 50px;
+} */
 
-.hero-image img {
+/* .hero-image img {
     max-width: 80%;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -148,11 +150,11 @@ header {
     width: 700px;
     height: auto;
     object-fit: cover;
-}
+} */
 
-.hero-image img:hover {
+/* .hero-image img:hover {
     transform: scale(1.05);
-}
+} */
 
 /* Sections */
 section {
@@ -183,6 +185,11 @@ section {
 }
 
 /* About Section */
+.about{
+margin-top: -15rem;
+}
+
+
 .about-content {
     display: flex;
     gap: 3rem;
@@ -247,7 +254,7 @@ section {
 /* Projects Section */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
@@ -317,7 +324,7 @@ section {
 /* Hobbies Section */
 .hobbies-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
@@ -518,6 +525,7 @@ footer {
 @media (max-width: 992px) {
     .hero-content h1 {
         font-size: 2.5rem;
+        
     }
     
     .about-content {
@@ -564,11 +572,19 @@ footer {
     
     .hero-content {
         margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .hero-content p {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .cta-button {
+        /* align-self: center; */
+        margin-left: 45px;
     }
     
     .section-title {
